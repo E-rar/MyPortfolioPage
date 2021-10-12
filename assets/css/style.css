@@ -1,0 +1,73 @@
+body{
+    background:black;
+    overflow-x: hidden;
+}
+#wrapper{
+    /* width:900px; */
+    width:100%;
+    -webkit-perspective: 300;
+    -moz-perspective: 300;
+    margin: 150px auto 0 auto;
+  }
+  div img{
+      width:85%;
+  }
+  .carrousel{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: Caroussel 40s infinite linear;
+    -moz-transform-style: preserve-3d;
+    -moz-animation: Caroussel 20s infinite linear;
+  }
+ 
+  
+  .plan{
+    position:absolute;
+    height: 50%;
+    width: 80%;
+    text-align:center;
+    font-size: 8em;
+    color:#FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity:0.8;
+  }
+  .plan:hover{
+    opacity:1;
+  }
+  div{
+      background-color:rgba(0, 0, 0, 0);
+  }
+  
+  @-webkit-keyframes Caroussel{
+    
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-360deg); }
+  }
+  
+  @-moz-keyframes Caroussel{
+    
+    from { -moz-transform: rotateY(0); }
+    to { -moz-transform: rotateY(-360deg); }
+  }
+  
+  
+  
+  .p1{ -webkit-transform: translateZ(500px);}
+  .p2{ -webkit-transform: rotateY(45deg) translateZ(500px);}
+  .p3{ -webkit-transform: rotateY(90deg) translateZ(500px);}
+  .p4{ -webkit-transform: rotateY(135deg) translateZ(500px);}
+  .p5{ -webkit-transform: rotateY(180deg) translateZ(500px);}
+  .p6{ -webkit-transform: rotateY(225deg) translateZ(500px);}
+  .p7{ -webkit-transform: rotateY(270deg) translateZ(500px);}
+  .p8{ -webkit-transform: rotateY(315deg) translateZ(500px);}
+  
+  .p1{ -moz-transform: translateZ(500px);}
+  .p2{ -moz-transform: rotateY(45deg) translateZ(500px);}
+  .p3{ -moz-transform: rotateY(90deg) translateZ(500px);}
+  .p4{ -moz-transform: rotateY(135deg) translateZ(500px);}
+  .p5{ -moz-transform: rotateY(180deg) translateZ(500px);}
+  .p6{ -moz-transform: rotateY(225deg) translateZ(500px);}
+  .p7{ -moz-transform: rotateY(270deg) translateZ(500px);}
+  .p8{ -moz-transform: rotateY(315deg) translateZ(500px);}
